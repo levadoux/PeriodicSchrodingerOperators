@@ -57,13 +57,12 @@ for k1=kvalues
     v = eigs(H, Neig,'smallestreal'); % To get the Neig first eigenvalues ranked by smallestreal part
     spect = [spect,v];
 
-end
+    if mod(it, n/20)==0
+        fprintf("=")
+    end
+    it = it+1;
 
-if mod(it, n/20)==0
-    fprintf("=")
 end
-it = it+1;
-
 
 fprintf(newline)
 toc
