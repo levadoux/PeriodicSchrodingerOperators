@@ -1,5 +1,5 @@
 function Z = pot1D(x)
-
+% Use Ctr+R / Ctr+T to add/remove '%'
 
 % Real potential
 % Z = sqrt(x);
